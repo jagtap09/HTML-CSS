@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+         /* universal selector select all  */
+
+         *{
+            color:red;
+         }
+
+
+         /* element selector select targets all <p> */
+            p{
+                color: blue;
+            }
+
+            /* class attribute this was select the all class attribute */
+            .highlight{
+                color: rgb(167, 11, 37);
+            }
+
+            /* id selector this select the id only and apply changes */
+ #header {
+    font-size: 24px;
+    text-decoration: underline;
+
+}
+            /* attribute selector it only select the speific attribute */
+            input[type="text"]{
+                color: black;
+            }
+
+            /* gruop selector  it select grop of elements */
+            h1,p,h2{
+                color: aqua;
+                text-decoration: underline;
+            }
+
+            /* desecendant seltor select all <p> elemnet from div*/
+                div p{
+                    color:rgb(184, 123, 48);
+                }
+
+                /* child selector  */
+                ul>li{
+                    color:darkmagenta;
+                }
+                /* pseudo-class */
+                a:hover{
+                    color: brown;
+                }
+
+                /* pseudo-element */
+                p::first-line{
+                    color: #000;
+                    font-weight: bold;
+                }
+    </style>
+</head>
+<body>
+<!-- selectors 1 universal selector  -->
+<h1> Heyy this was from the  selector </h1>
+<h2> hey this was element selector</h2>
+
+<p>  CSS selectors are used to target specific HTML elements for styling. There are different types of selectors available.
+</p>
+<h1 class="highlight">This was paragraph has the class highlight 
+</h1>   
+ <input type ="text" name="name" placeholder="enter the name ">
+<h1 id ="header"> this was the id selector </h1>
+<!-- descendant selector -->
+<div> <p> this was the descendant selector </p>
+<h3>okkkkk</h3></div>
+<!-- child selector -->
+<ul>
+    <li>first </li>
+    <ul>
+        <li> nested item</li>
+
+    </ul>
+
+        <li> second</li>
+</ul>
+<!--pseudo class   -->
+
+<a herf ="#">hover over the linkn to see it turn rd </a>
+
+<!-- pseudo-element -->
+<p>This is a paragraph, and the first line of this paragraph will be bold due to the pseudo-element.</p>
+
+
+
+
+</body>
+</html>
